@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ===== SEO ===== -->
+<title>Abhijeet Gupta | Student Interested in Politics and Law</title>
+<meta name="description" content="Personal portfolio of Abhijeet Gupta, a student exploring politics, law, governance, democracy and public affairs.">
+<!-- AFTER PUBLISHING: replace the URL below (and og:url) with your real website address, e.g. https://yourname.github.io/ -->
+<link rel="canonical" href="https://YOUR-USERNAME.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Abhijeet Gupta | Student Interested in Politics and Law">
+<meta property="og:description" content="Exploring ideas, understanding governance, and learning about law and society.">
+<meta property="og:url" content="https://YOUR-USERNAME.github.io/">
+<meta name="theme-color" content="#0b1030">
+<!-- Simple initials favicon generated from SVG (no extra file needed) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237c3aed'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EAG%3C/text%3E%3C/svg%3E">
+<!-- Structured data: only your name and site type, nothing invented -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Abhijeet Gupta","description":"Personal portfolio of a student interested in politics and law."}</script>
+
+<style>
+/* ===== THEME COLOURS (edit here to change the whole site) ===== */
+:root{
+  --bg:#0b1030; --bg2:#121846; --card:rgba(255,255,255,.07); --border:rgba(255,255,255,.14);
+  --text:#eef0ff; --muted:#b9bfe6;
+  --purple:#8b5cf6; --blue:#38bdf8; --orange:#fb923c;
+  --grad:linear-gradient(135deg,#7c3aed,#2563eb);
+  --shadow:0 10px 30px rgba(0,0,0,.35);
+}
+[data-theme="light"]{
+  --bg:#f4f5ff; --bg2:#e8eaff; --card:rgba(255,255,255,.85); --border:rgba(60,60,140,.18);
+  --text:#14183a; --muted:#444a7a; --purple:#6d28d9; --blue:#0369a1; --orange:#c2410c;
+  --shadow:0 10px 30px rgba(60,60,140,.15);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden;transition:background .4s,color .4s}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--orange);color:#000;padding:8px 14px;border-radius:8px;z-index:200}
+.skip:focus{left:8px}
+
+/* ===== LOADER (fades out by itself after ~1s; never blocks clicks) ===== */
+#loader{position:fixed;inset:0;display:grid;place-items:center;background:var(--bg);z-index:300;pointer-events:none;animation:hideLoader .5s ease 1s forwards}
+#loader span{width:46px;height:46px;border-radius:50%;border:4px solid var(--border);border-top-color:var(--orange);animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes hideLoader{to{opacity:0;visibility:hidden}}
+
+/* ===== ANIMATED BACKGROUND (GPU-friendly: only transform is animated) ===== */
+.blobs{position:fixed;inset:0;z-index:-1;overflow:hidden;background:radial-gradient(circle at 20% 0%,var(--bg2),var(--bg) 60%)}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.45;animation:float 18s ease-in-out infinite alternate;will-change:transform}
+.b1{width:360px;height:360px;background:var(--purple);top:5%;left:-80px}
+.b2{width:320px;height:320px;background:var(--blue);top:40%;right:-80px;animation-delay:-6s}
+.b3{width:260px;height:260px;background:var(--orange);bottom:-60px;left:35%;animation-delay:-12s;opacity:.3}
+@keyframes float{to{transform:translate(60px,-50px) scale(1.15)}}
+
+/* ===== NAVIGATION ===== */
+header{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 75%,transparent);border-bottom:1px solid var(--border)}
+nav{max-width:1100px;margin:auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{font-weight:800;text-decoration:none;font-size:1.15rem}
+.logo b{background:var(--grad);padding:2px 8px;border-radius:8px;color:#fff;margin-right:6px}
+.links{display:flex;gap:4px;list-style:none;align-items:center}
+.links a{text-decoration:none;padding:8px 12px;border-radius:999px;color:var(--muted);transition:.25s}
+.links a:hover{background:var(--card);color:var(--text)}
+.icon-btn{background:var(--card);border:1px solid var(--border);color:var(--text);width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:1.1rem}
+#menuBtn{display:none}
+@media(max-width:800px){
+  #menuBtn{display:inline-block}
+  .links{position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--bg);padding:12px;border-bottom:1px solid var(--border);display:none}
+  .links.open{display:flex}
+}
+
+/* ===== LAYOUT ===== */
+section{max-width:1100px;margin:auto;padding:90px 20px 40px}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);margin-bottom:10px}
+h2::after{content:"";display:block;width:70px;height:4px;border-radius:4px;margin-top:8px;background:linear-gradient(90deg,var(--purple),var(--orange))}
+.lead{color:var(--muted);max-width:720px;margin:14px 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:24px;box-shadow:var(--shadow);transition:transform .3s,border-color .3s,box-shadow .3s}
+.card:hover{transform:translateY(-8px);border-color:var(--purple);box-shadow:0 14px 40px rgba(139,92,246,.35)}
+.card .ic{font-size:2rem;display:inline-block;transition:transform .3s}
+.card:hover .ic{transform:scale(1.2) rotate(-8deg)}
+.card h3{margin:10px 0 6px}
+.card p{color:var(--muted)}
+.tag{display:inline-block;font-size:.75rem;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--orange);color:#1a1200;margin-bottom:8px}
+.dashed{border-style:dashed}
+
+/* ===== HERO ===== */
+#home{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding-top:110px}
+.hello{color:var(--orange);font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.9rem}
+h1{font-size:clamp(2.6rem,9vw,5.5rem);line-height:1.05;margin:10px 0;background:linear-gradient(90deg,#a78bfa,#38bdf8,#fb923c,#a78bfa);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 8s linear infinite;text-shadow:0 0 40px rgba(139,92,246,.25)}
+[data-theme="light"] h1{background-image:linear-gradient(90deg,#6d28d9,#0369a1,#c2410c,#6d28d9)}
+@keyframes shine{to{background-position:300% 0}}
+.sub{font-size:clamp(1.1rem,3vw,1.5rem);font-weight:600}
+.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.btn{display:inline-block;padding:14px 28px;border-radius:999px;font-weight:700;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:transform .25s,box-shadow .25s;font-size:1rem}
+.btn.primary{background:var(--grad);color:#fff;box-shadow:0 0 0 0 rgba(139,92,246,.6);animation:pulse 2.5s infinite}
+.btn.ghost{border-color:var(--orange);color:var(--text);background:transparent}
+.btn:hover{transform:translateY(-3px) scale(1.04)}
+.btn.ghost:hover{background:var(--orange);color:#1a1200}
+@keyframes pulse{70%{box-shadow:0 0 0 16px rgba(139,92,246,0)}100%{box-shadow:0 0 0 0 rgba(139,92,246,0)}}
+.clock{margin-top:36px;display:inline-block;padding:10px 18px;border-radius:16px;background:var(--card);border:1px solid var(--border)}
+.clock strong{font-size:1.5rem;font-variant-numeric:tabular-nums;color:var(--blue)}
+.clock small{display:block;color:var(--muted)}
+
+/* ===== LISTS ===== */
+.topics{list-style:none;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.topics li{background:var(--card);border:1px solid var(--border);border-left:5px solid var(--blue);border-radius:14px;padding:14px 18px;transition:.25s}
+.topics li:hover{border-left-color:var(--orange);transform:translateX(6px)}
+
+/* ===== FOOTER + BACK TO TOP ===== */
+footer{text-align:center;padding:40px 20px;margin-top:50px;border-top:1px solid var(--border);color:var(--muted)}
+#top{position:fixed;right:18px;bottom:18px;width:46px;height:46px;border-radius:50%;border:0;background:var(--grad);color:#fff;font-size:1.3rem;cursor:pointer;box-shadow:var(--shadow);opacity:0;visibility:hidden;transition:.3s;z-index:90}
+#top.show{opacity:1;visibility:visible}
+
+/* ===== SCROLL REVEAL ===== */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+
+/* ===== REDUCED MOTION: switches off animations for people who ask for it ===== */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+  #loader{display:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="loader" aria-hidden="true"><span></span></div>
+<div class="blobs" aria-hidden="true"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i></div>
+
+<header>
+  <nav aria-label="Main navigation">
+    <a class="logo" href="#home"><b>AG</b>Abhijeet</a>
+    <ul class="links" id="links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#learning">Learning</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#goals">Goals</a></li>
+      <li><button class="icon-btn" id="themeBtn" aria-label="Switch between light and dark theme">🌙</button></li>
+    </ul>
+    <button class="icon-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="links">☰</button>
+  </nav>
+</header>
+
+<main id="main">
+  <!-- ===== HOME ===== -->
+  <section id="home">
+    <p class="hello">Welcome to my portfolio</p>
+    <h1>Abhijeet Gupta</h1>
+    <p class="sub">Student | Interested in Politics and Law</p>
+    <p class="lead">Exploring ideas, understanding governance, and learning about law and society.</p>
+    <div class="btns">
+      <a class="btn primary" href="#interests">Explore My Interests</a>
+      <a class="btn ghost" href="#about">About Me</a>
+    </div>
+    <div class="clock" aria-label="Current local time"><strong id="time">--:--:--</strong><small id="date"></small></div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="reveal">
+    <h2>About Me</h2>
+    <p class="lead">I am a student with a growing interest in politics, law, governance, democracy, constitutional principles and public affairs. I enjoy reading, asking questions and trying to understand how institutions and laws shape society. This website is a place to share what I am learning along the way.</p>
+  </section>
+
+  <!-- ===== INTERESTS ===== -->
+  <section id="interests">
+    <h2 class="reveal">My Interests</h2>
+    <p class="lead reveal">These are personal interests that I enjoy exploring.</p>
+    <div class="grid">
+      <article class="card reveal"><span class="ic" aria-hidden="true">🏛️</span><h3>Politics and Governance</h3><p>Understanding how governments work, how decisions are made and how citizens take part.</p></article>
+      <article class="card reveal"><span class="ic" aria-hidden="true">⚖️</span><h3>Law and Justice</h3><p>Learning how laws are created and applied, and why fairness and justice matter.</p></article>
+      <article class="card reveal"><span class="ic" aria-hidden="true">📜</span><h3>Constitution and Democracy</h3><p>Exploring constitutional principles and the values that support democratic societies.</p></article>
+      <article class="card reveal"><span class="ic" aria-hidden="true">🤝</span><h3>Public Policy and Society</h3><p>Looking at how policies affect everyday life and how communities are shaped by them.</p></article>
+    </div>
+  </section>
+
+  <!-- ===== LEARNING CORNER =====
+       TO ADD A TOPIC: copy one <li>...</li> line below, paste it inside the <ul>, and change the text. -->
+  <section id="learning">
+    <h2 class="reveal">Learning Corner</h2>
+    <p class="lead reveal">Topics I am interested in learning about.</p>
+    <ul class="topics reveal">
+      <li>Indian Constitution</li>
+      <li>Parliament and democratic institutions</li>
+      <li>Fundamental Rights and Duties</li>
+      <li>Indian legal system</li>
+      <li>Public policy and governance</li>
+      <!-- <li>Your new topic here</li> -->
+    </ul>
+  </section>
+
+  <!-- ===== PROJECTS =====
+       The cards below are PLACEHOLDERS, not real projects.
+       TO ADD A REAL PROJECT: delete the "tag" line, change the title and description
+       (for example an essay, a debate, a presentation or a school activity you really completed).
+       To add more, copy a whole <article>...</article> block. Only add things you genuinely did. -->
+  <section id="projects">
+    <h2 class="reveal">My Projects</h2>
+    <p class="lead reveal">Example placeholders. Real projects will be added here as I complete them.</p>
+    <div class="grid">
+      <article class="card dashed reveal"><span class="tag">EXAMPLE PLACEHOLDER</span><h3>Project Title</h3><p>A short description of what the project is about and what I learned from it.</p></article>
+      <article class="card dashed reveal"><span class="tag">EXAMPLE PLACEHOLDER</span><h3>Project Title</h3><p>A short description of what the project is about and what I learned from it.</p></article>
+      <article class="card dashed reveal"><span class="tag">EXAMPLE PLACEHOLDER</span><h3>Project Title</h3><p>A short description of what the project is about and what I learned from it.</p></article>
+    </div>
+  </section>
+
+  <!-- ===== GOALS (edit the text of each card) ===== -->
+  <section id="goals">
+    <h2 class="reveal">What I Want to Learn</h2>
+    <p class="lead reveal">Placeholder goals that I will update over time.</p>
+    <div class="grid">
+      <article class="card reveal"><span class="ic" aria-hidden="true">🎯</span><h3>Goal on Politics</h3><p>Write a goal here, for example a topic or book about politics you want to study.</p></article>
+      <article class="card reveal"><span class="ic" aria-hidden="true">🎯</span><h3>Goal on Law</h3><p>Write a goal here, for example a legal concept you want to understand better.</p></article>
+      <article class="card reveal"><span class="ic" aria-hidden="true">🎯</span><h3>Goal on Public Affairs</h3><p>Write a goal here, for example a public issue you want to follow and understand.</p></article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; <span id="year">2026</span> Abhijeet Gupta. All rights reserved.</p>
+</footer>
+
+<button id="top" aria-label="Back to top">↑</button>
+
+<script>
+/* ===== THEME TOGGLE (remembers your choice; works even if storage is blocked) ===== */
+const root = document.documentElement, themeBtn = document.getElementById('themeBtn');
+function setTheme(t){ root.dataset.theme = t; themeBtn.textContent = t === 'dark' ? '🌙' : '☀️'; }
+let saved = null;
+try { saved = localStorage.getItem('theme'); } catch(e) {}
+setTheme(saved || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'));
+themeBtn.addEventListener('click', () => {
+  const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+  setTheme(next);
+  try { localStorage.setItem('theme', next); } catch(e) {}
+});
+
+/* ===== MOBILE MENU ===== */
+const links = document.getElementById('links'), menuBtn = document.getElementById('menuBtn');
+menuBtn.addEventListener('click', () => {
+  const open = links.classList.toggle('open');
+  menuBtn.setAttribute('aria-expanded', open);
+  menuBtn.textContent = open ? '✕' : '☰';
+});
+links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  links.classList.remove('open'); menuBtn.setAttribute('aria-expanded', false); menuBtn.textContent = '☰';
+}));
+
+/* ===== DIGITAL CLOCK ===== */
+function tick(){
+  const n = new Date();
+  document.getElementById('time').textContent = n.toLocaleTimeString();
+  document.getElementById('date').textContent = n.toLocaleDateString(undefined, {weekday:'long', day:'numeric', month:'long', year:'numeric'});
+}
+tick(); setInterval(tick, 1000);
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ===== SCROLL REVEAL ===== */
+const items = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
+  items.forEach(el => io.observe(el));
+} else { items.forEach(el => el.classList.add('in')); }
+
+/* ===== BACK TO TOP ===== */
+const topBtn = document.getElementById('top');
+addEventListener('scroll', () => topBtn.classList.toggle('show', scrollY > 500), {passive:true});
+topBtn.addEventListener('click', () => scrollTo({top:0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'}));
+</script>
+</body>
+</html>
